@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calc Job's</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+   <main>
+      <div class="card">
+         <h5> Calcule sua hora de trabalho</h5>
+         <div class="box">
+            <label>Quantas horas você pretende trabalhar por dia nesse projeto?</label>
+            <input value="2" type="text" placeholder="Horas por dia" name="" id="hour-for-day">
+         </div>
+         <div class="box">
+            <label>Quantos dias pretende trabalhar no decorrer do seu mês?</label>
+            <input value="24" type="text" placeholder="Dias por mês" name="" id="day-for-month">
+         </div>
+         <div class="box">
+            <label>Informe o TOTAL das suas despesas fixas em um mês, exemplo: Aluguel, água, luz, alimentação, etc...</label>
+            <input value="1750" type="text" placeholder="Total das despesas" name="" id="spend">
+         </div>
+         <div class="box">
+            <label>Informe o valor total de seu equipamento, considerando desde seu computador, até softwares pagos que utiliza.</label>
+            <input value="7250" type="text" placeholder="Valor total do equipamento" name="" id="equipament">
+         </div>
+         <div class="box">
+            <label>Qual a porcentagem de lucro que deseja ter em cima da hora de trabalho?</label>
+            <select name="lucro" id="percent" class="select" required>
+               <option value="" disabled>Defina a porcentagem</option>
+               <option value="10">10</option>
+               <option value="20" selected>20</option>
+               <option value="30">30</option>
+               <option value="40">40</option>
+            </select>
+         </div>
+         <div class="box submit">
+            <input type="submit" onclick="calculate()" value="Calcular Agora">
+            <input type="submit" onclick="clean()" name="" id="" value="Limpar">
+         </div>
+         <div id="result"></div>
+      </div>
+   </main>
+
+   <script src="./script.js"></script>   
+</body>
+</html>

@@ -1,0 +1,129 @@
+h1, h2, h3, h4, h5, h6, p, a, small, label {
+   font-family: 'PT Mono', monospace;
+   font-size: 16px !important;
+   text-align: start;
+   margin-bottom: 0.6em;
+   line-height: 1.6em;
+}
+
+h1 {
+   font-size: 38px;
+}
+
+h2 {
+   font-size: 34px;
+}
+
+h3 {
+   font-size: 30px;
+}
+
+h4 {
+   font-size: 26px;
+}
+
+h5 {
+   font-size: 22px;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: #fff;
+   
+}
+
+body {
+   background: rgb(15, 15, 15);
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 5em auto;
+}
+
+.card {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   width: 40em;
+   padding: 1em;
+   height: 100%;
+   max-width: 40em;
+   border-radius: 6px;
+   background: rgb(34, 34, 34);
+}
+
+.card h5 {
+   margin: 2em 0 2em 0;
+}
+
+.box {
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   margin-bottom: 2em;
+}
+
+.submit {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+label {
+   text-align: start;
+   margin-bottom: 0.6em;
+   line-height: 1.6em;
+}
+
+input[type="text"],
+input[type="submit"],
+select {
+   color: #fff;
+   max-width: 100%;
+   width: 25em;
+   height: 3em;
+   border: none;
+   background: transparent;
+   padding: 0 1em;
+   border-bottom: 1px solid #ffff;
+}
+
+input[type="submit"] {
+   max-width: 100%;
+   width: 10em;
+   display: inline-block;
+   margin: 0 auto;
+   margin-top: 2em;
+   cursor: pointer;
+   transition: 0.5s;
+   border: none;
+   font-size: 1em;
+}
+
+input[type="submit"]:hover {
+   color: grey;
+}
+
+select option {
+   color: #000;
+}
+
+#result {
+   text-align: start;
+}
+
+@media(max-width: 720px) {
+   main {
+      margin: 0;
+   }
+   .card {
+      width: 100%;
+      max-width: 100%;
+      padding: 3em;
+   }
+}
